@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.fix {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+
+.hamburger,
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    color: #fff;
+    font-size: 25px;
+}
+
+.logo img {
+    width: 195px;
+    height: 50px;
+}
+
+.nav-bar {
+    margin: 0;
+    display: flex;
+    height: 70px;
+    padding: 0 15px;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    z-index: 1;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    font-family: montserrat;
+    font-size: 14px;
+    color: white;
+    margin-left: 12px;
+    font-weight: 530;
+}
+
+.button {
+    background-color: #038dfe;
+    padding: 10px 30px;
+    border-radius: 80px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #038dfe;
+    transition: ease all;
+}
+
+.pho {
+    width: 100%;
+    filter: blur(1px);
+    background-image: url(pho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.cmp {
+    color: white;
+    font-size: 40px;
+    top: -400px;
+    /* left: 10px; */
+    margin-left: 10px;
+    position: relative;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+}
+
+.DECOV {
+    font-size: 15px;
+    top: -300px;
+    margin-left: 9px;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    width: 150px;
+    border: none;
+    position: relative;
+    background-color: #008aff;
+    box-shadow: 0px 0px 35px -6px rgb(104, 168, 221);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    color: white;
+    border: 1px solid black;
+}
+
+.picture {
+    background-image: url(A.jpg);
+    background-size: cover;
+    width: 55%;
+    height: 480px;
+}
+
+.cont {
+    width: 45%;
+    padding: 60px;
+    line-height: 120px;
+    color: black;
+    /* background-color: rgb(104, 168, 221); */
+}
+
+.coeur1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.coeur {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+}
+
+.picture2 {
+    background-image: url(coeur.jpg);
+    background-size: cover;
+    width: 55%;
+    height: 480px;
+}
+
+.picture3 {
+    background-image: url(B.jpg);
+    background-size: cover;
+    width: 55%;
+    height: 510px;
+}
+
+.insc {
+    display: flex;
+}
+
+.para {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 40px 0px 20px;
+    padding: 50px 100px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnInscription3 {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Montserrat;
+    background-color: #038dfe;
+    margin: 90px 30px;
+    width: 525px;
+    height: 20px;
+    border-radius: 80px;
+    text-align: center;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.btnInscription3:hover {
+    background-color: white;
+    color: #038dfe;
+}
+
+footer {
+    background-color: black;
+    height: 60.33px;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    color: #666666;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.supp {
+    font-size: 14px;
+    font-family: Montserrat;
+    color: #337ab7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.copy {
+    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #8f9296;
+    letter-spacing: 0.08em;
+    margin-top: 30px;
+}
+
+.last {
+    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #666666;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.icons {
+    float: right;
+}
+
+.fab {
+    color: white;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+@media all and (max-width: 768px) {
+    .logo img {
+        width: 100px;
+        height: 30px;
+    }
+    .fix {
+        height: 60px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .nav-bar {
+        display: none;
+        position: fixed;
+        top: 2px;
+        left: 0;
+        background-color: #337ab7;
+        width: 100%;
+        height: 100%;
+    }
+    .nav-bar li {
+        display: block;
+        padding: 16px 0;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    .nav-bar li:last-child {
+        border: none;
+    }
+    .menu-toggle:checked ~ .nav-bar {
+        display: block;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .espace {
+        margin-top: 0;
+    }
+    .content.espace {
+        flex-direction: column-reverse;
+    }
+    .picture,
+    .picture2,
+    .picture3,
+    .cont {
+        width: auto;
+    }
+    .titre2 {
+        line-height: 50px;
+    }
+    .insc {
+        display: block;
+        text-align: center;
+        padding: 50px 25px;
+    }
+    .para {
+        margin: 0;
+        padding: 20px 0;
+    }
+    .btnInscription3 {
+        margin: 0 15px;
+        display: block;
+        width: auto;
+    }
+
+    footer {
+        text-align: center;
+        display: block;
+        height: auto;
+    }
+    .icons {
+        float: none;
+    }
+}
